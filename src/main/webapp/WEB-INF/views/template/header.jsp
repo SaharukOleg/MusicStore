@@ -23,6 +23,10 @@
     <link href="<c:url value="/resources/css/bootstrap.min.css"/>" rel="stylesheet">
 
 
+    <link href="<c:url value="/resources/css/main.css"/>" rel="stylesheet">
+
+
+
 </head>
 <!-- NAVBAR
 ================================================== -->

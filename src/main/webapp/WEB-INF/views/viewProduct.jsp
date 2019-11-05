@@ -4,7 +4,7 @@
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <hi>Product Detail</hi>
+            <h1>Product Detail</h1>
 
             <p class="lead">Here is the detail information of the product!</p>
         </div>
@@ -13,7 +13,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="#" alt="image" style="width:100%; height: 300px"/>
+                    <img src="<c:url value="/resources/images/${product.productId}.png"/> " alt="image"
+                             style="width:100%"/>
             </div>
 
             <div class="col-md-5">
