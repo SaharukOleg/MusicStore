@@ -56,7 +56,7 @@
                                                              value="used"/>Used</label>
         </div>
 
-        <div class="from-group">
+        <div class="form-group">
             <label for="status">Status</label>
             <label class="checkbox-inline"><form:radiobutton path="productStatus" id="status"
                                                              value="actine"/>Active</label>
@@ -71,7 +71,7 @@
         </div>
 
 
-        <div class="from-group">
+        <div class="form-group">
             <label for="manufacture">Manufacture</label>
             <form:input path="productManufacturer" id="manufacture" class="form-Control"/>
         </div>
