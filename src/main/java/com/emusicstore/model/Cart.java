@@ -44,8 +44,6 @@ public class Cart {
     }
 
 
-
-
     public void addCartItem(CartItem item) {
         String productId = item.getProduct().getProductId();
 
@@ -63,19 +61,12 @@ public class Cart {
 
     public void removeCartItem(CartItem item) {
         String productId = item.getProduct().getProductId();
-        for (int i = 0; i < cartItems.size(); i++) {
-
-            if (cartItems.containsKey(productId)) {
-                cartItems.remove(productId);
-                updateGrandTotal();
-            } else {
-                System.out.println("CartItems is empty");
-            }
-        }
+        cartItems.remove(productId);
+        updateGrandTotal();
     }
 
     private void updateGrandTotal() {
-        grandTotal = 0;
+
 
         for (CartItem item : cartItems.values()) {
             grandTotal = grandTotal + item.getTotalPrice();

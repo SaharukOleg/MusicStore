@@ -5,7 +5,6 @@ import com.emusicstore.dao.ProductDao;
 import com.emusicstore.model.Cart;
 import com.emusicstore.model.CartItem;
 import com.emusicstore.model.Product;
-import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -24,7 +23,7 @@ public class CartController {
     private ProductDao productDao;
 
     //за допомогою аннотації @ResponseBody і депенденсі jackson  спрінг буде автоматично перетворювати Cart обєкт в json формат
-    @RequestMapping(value = "{cartId}", method = RequestMethod.GET)
+    @RequestMapping(value = "/{cartId}", method = RequestMethod.GET)
     public @ResponseBody
     Cart read(@PathVariable(value = "cartId") String cartId) {
         return cartDao.read(cartId);
