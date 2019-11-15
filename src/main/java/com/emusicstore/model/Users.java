@@ -1,5 +1,7 @@
 package com.emusicstore.model;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -10,8 +12,11 @@ public class Users {
     @Id
     @GeneratedValue
     private int usersId;
+    @NotEmpty(message = "The username must not be null.")
     private String username;
+    @NotEmpty(message = "The password must not be null.")
     private String password;
+
     private boolean enabled;
     private int customerId;
 
