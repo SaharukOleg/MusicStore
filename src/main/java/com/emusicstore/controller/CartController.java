@@ -1,0 +1,18 @@
+package com.emusicstore.controller;
+
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.web.bind.annotation.AuthenticationPrincipal;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/customer/cart")
+public class CartController {
+
+
+    @RequestMapping
+    public String getCart(@AuthenticationPrincipal User activeUser){
+
+    }
+
+}
