@@ -52,7 +52,7 @@
         <h3>Billing Address</h3>
 
         <div class="form-group">
-            <label for="billingStreet">Username</label>
+            <label for="billingStreet">Street Name</label>
             <form:input path="billingAddress.streetName" id="billingStreet" class="form-Control"/>
         </div>
 
@@ -89,7 +89,7 @@
 
 
         <div class="form-group">
-            <label for="shippingStreet">Username</label>
+            <label for="shippingStreet">Street Name</label>
             <form:input path="shippingAddress.streetName" id="shippingStreet" class="form-Control"/>
         </div>
 

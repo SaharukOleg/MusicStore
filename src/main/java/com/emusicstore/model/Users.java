@@ -4,14 +4,16 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
 
 @Entity
 public class Users {
 
     @Id
-    @GeneratedValue
-    private int usersId;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private int usersId ;
     @NotEmpty(message = "The username must not be null.")
     private String username;
     @NotEmpty(message = "The password must not be null.")
@@ -19,6 +21,7 @@ public class Users {
 
     private boolean enabled;
     private int customerId;
+
 
     public int getUsersId() {
         return usersId;
