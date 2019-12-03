@@ -2,7 +2,7 @@
 <%@include file="/WEB-INF/views/template/header.jsp" %>
 
 <div class="container-wrapper">
-    <div class="content">
+    <div class="container">
         <section>
             <div class="jumbotron">
                 <div class="container">
@@ -42,7 +42,7 @@
                         <th></th>
                         <th></th>
                         <th>Grand Total</th>
-                        <th>{{cart.grandTotal}}</th>
+                        <th>{{calGrandTotal()}}</th>
                         <th></th>
                     </tr>
                 </table>
@@ -52,6 +52,7 @@
         </section>
     </div>
 </div>
+
 
 <script src="<c:url value="/resources/js/controller.js" />"></script>
 <%@include file="/WEB-INF/views/template/footer.jsp" %>

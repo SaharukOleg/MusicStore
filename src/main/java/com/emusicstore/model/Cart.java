@@ -27,6 +27,8 @@ public class Cart implements Serializable {
 
     private double grandTotal;
 
+    public Cart() {
+    }
 
     public int getCartId() {
         return cartId;
