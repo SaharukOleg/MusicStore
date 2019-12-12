@@ -11,6 +11,7 @@ public class Customer implements Serializable {
 
     private static final long serialVersionUID = 5140900014886997914L;
 
+
     @Id
     @GeneratedValue
     private int customerId;
@@ -42,6 +43,7 @@ public class Customer implements Serializable {
     @JoinColumn(name = "cartId")
     @JsonIgnore
     private Cart cart;
+
 
     public int getCustomerId() {
         return customerId;
