@@ -9,7 +9,7 @@ public class CustomerOrder implements Serializable {
     private static final long serialVersionUID = 2983360377227484514L;
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int customerOrderId;
 
     @OneToOne

@@ -22,7 +22,7 @@
                     <h3>${product.productName}</h3>
                     <p>${product.productDescription}</p>
                     <p>
-                        <strong>Manufacture </strong>:${product.productManufacturer}
+                        <strong>Manufacturer</strong>:${product.productManufacturer}
                     </p>
                     <p>
                         <strong>Category </strong>:${product.productCategory}
@@ -45,14 +45,12 @@
                         <a href="<c:url value="${url}"/>" class="btn btn-default">Back</a>
                         <a href="#" class="btn btn-warning btn-large" ng-click="addToCart('${product.productId}')"><span
                                 class="glyphicon glyphicon-shopping-cart"></span>Order Now</a>
-                        <a href="<spring:url value="/cart/"/>"
-                           class="btn btn-default"><span class="glyphicon glyghicon-hand-right"></span>View Cart</a>
+                        <a href="<spring:url value="/cart" />"
+                           class="btn btn-default"><span class="glyphicon glyphicon-hand-right"></span>View Cart</a>
                     </p>
                 </div>
             </div>
         </div>
 
-
         <script src="<c:url value="/resources/js/controller.js" />"></script>
-
-<%@include file="/WEB-INF/views/template/footer.jsp" %>
+        <%@include file="/WEB-INF/views/template/footer.jsp" %>

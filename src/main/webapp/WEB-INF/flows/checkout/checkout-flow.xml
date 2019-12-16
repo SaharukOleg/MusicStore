@@ -13,7 +13,7 @@
     </action-state>
 
     <view-state id="collectCustomerInfo" view="collectCustomerInfo.jsp" model="order">
-        <transition on="collectCustomerInfo" to="collectShippingDetail"/>
+        <transition on="customerInfoCollected" to="collectShippingDetail"/>
     </view-state>
 
 
@@ -39,11 +39,11 @@
 
     <end-state id="endState"/>
 
-    <view-state id="InvalidCortWarning">
+    <view-state id="invalidCartWarning">
         <transition to="endState"/>
     </view-state>
 
-    <end-state id="cancelCheckout" view="checkoutCancelled.jsp"/>
+    <end-state id="cancelCheckout" view="checkOutCancelled.jsp"/>
 
     <global-transitions>
         <transition on="cancel" to="cancelCheckout"/>

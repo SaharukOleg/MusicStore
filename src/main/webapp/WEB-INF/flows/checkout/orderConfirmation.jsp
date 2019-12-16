@@ -76,6 +76,12 @@
                                 <tr>
                                     <td></td>
                                     <td></td>
+                                    <td class="text-right">
+                                        <h4><strong>Grand Total: </strong></h4>
+                                    </td>
+                                    <td class="text-center text-danger">
+                                        <t4><strong>${order.cart.grandTotal}</strong></t4>
+                                    </td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -84,9 +90,9 @@
 
 
                         <br><br>
-                        <button class="btn btn-default" name="_eventId_backToCollectCustomerInfo">Back</button>
-                        <input type="submit" value="Next" class="btn btn-default"
-                               name="_eventId_shippingDetailCollected"/>
+                        <button class="btn btn-default" name="_eventId_backToCollectShipingDetail">Back</button>
+                        <input type="submit" value="Submit Order" class="btn btn-default"
+                               name="_eventId_orderConfirmed"/>
                         <button class="btn btn-default" name="_eventId_cancel">Cancel</button>
                     </div>
                 </form:form>
